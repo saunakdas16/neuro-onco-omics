@@ -18,13 +18,13 @@ A reproducible 3D MRI radiomics pipeline for quantitative analysis of brain tumo
 
 
 
-!\[Python](https://img.shields.io/badge/Python-3.x-blue?logo=python\&logoColor=white)
+!\[Python](https://img.shields.io/badge/Python-3.x-blue?logo=python\\\&logoColor=white)
 
-!\[NumPy](https://img.shields.io/badge/NumPy-2.x-013243?logo=numpy\&logoColor=white)
+!\[NumPy](https://img.shields.io/badge/NumPy-2.x-013243?logo=numpy\\\&logoColor=white)
 
-!\[Pandas](https://img.shields.io/badge/Pandas-2.x-150458?logo=pandas\&logoColor=white)
+!\[Pandas](https://img.shields.io/badge/Pandas-2.x-150458?logo=pandas\\\&logoColor=white)
 
-!\[Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-F7931E?logo=scikitlearn\&logoColor=white)
+!\[Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-F7931E?logo=scikitlearn\\\&logoColor=white)
 
 !\[NiBabel](https://img.shields.io/badge/NiBabel-NIfTI-orange)
 
@@ -36,7 +36,7 @@ A reproducible 3D MRI radiomics pipeline for quantitative analysis of brain tumo
 
 
 
-\*\*Pilot analysis completed · Automated full-dataset features extraction completed\*\*
+\*\*Pilot analysis completed · Automated feature extraction completed for 97/102 subjects\*\*
 
 
 
@@ -64,13 +64,13 @@ The analysis focuses on four MRI modalities:
 
 
 
-\- FLAIR
+\* FLAIR
 
-\- T1
+\* T1
 
-\- T1Gd
+\* T1Gd
 
-\- T2
+\* T2
 
 
 
@@ -118,17 +118,17 @@ Each subject directory contains multi-modal MRI volumes together with tumour seg
 
 
 
-| Modality | Description |
+| Modality | Description                             |
 
-|---|---|
+| -------- | --------------------------------------- |
 
-| FLAIR | Fluid-attenuated inversion recovery MRI |
+| FLAIR    | Fluid-attenuated inversion recovery MRI |
 
-| T1 | T1-weighted MRI |
+| T1       | T1-weighted MRI                         |
 
-| T1Gd | Contrast-enhanced T1-weighted MRI |
+| T1Gd     | Contrast-enhanced T1-weighted MRI       |
 
-| T2 | T2-weighted MRI |
+| T2       | T2-weighted MRI                         |
 
 
 
@@ -160,11 +160,11 @@ The imaging dataset is stored locally and is intentionally \*\*excluded from Git
 
 
 
-\# ⚙️ Radiomics Pipeline
+\## ⚙️ Radiomics Pipeline
 
 
 
-\## 01. Data Discovery and Organization
+\### 01. Data Discovery and Organization
 
 
 
@@ -176,15 +176,15 @@ For each subject, the pipeline identifies:
 
 
 
-\- FLAIR MRI
+\* FLAIR MRI
 
-\- T1 MRI
+\* T1 MRI
 
-\- T1Gd MRI
+\* T1Gd MRI
 
-\- T2 MRI
+\* T2 MRI
 
-\- Manually corrected tumour segmentation
+\* Manually corrected tumour segmentation
 
 
 
@@ -216,7 +216,7 @@ This preserves the relationship between extracted radiomics features and the ori
 
 
 
-\## 02. MRI Loading
+\### 02. MRI Loading
 
 
 
@@ -248,7 +248,7 @@ Only voxels belonging to the tumour are subsequently used for tumour-restricted 
 
 
 
-\## 03. Intensity Normalization
+\### 03. Intensity Normalization
 
 
 
@@ -322,7 +322,7 @@ The normalization is performed independently for:
 
 
 
-\## 04. Tumour-Restricted Image Analysis
+\### 04. Tumour-Restricted Image Analysis
 
 
 
@@ -342,7 +342,7 @@ Tumour voxel coordinates are also extracted from the binary segmentation for geo
 
 
 
-\# 📐 Geometry Features
+\## 📐 Geometry Features
 
 
 
@@ -478,7 +478,7 @@ second-largest principal spread
 
 
 
-\# 🧪 Intensity Features
+\## 🧪 Intensity Features
 
 
 
@@ -574,7 +574,7 @@ It provides a measure of relative intensity variability within the tumour.
 
 
 
-\# 🧬 3D GLCM Texture Analysis
+\## 🧬 3D GLCM Texture Analysis
 
 
 
@@ -648,7 +648,7 @@ The resulting GLCM is then:
 
 
 
-\## 📊 GLCM Features
+\### 📊 GLCM Features
 
 
 
@@ -734,7 +734,7 @@ This produces:
 
 
 
-\## 🔹 GLCM Feature Definitions
+\### 🔹 GLCM Feature Definitions
 
 
 
@@ -786,7 +786,7 @@ Measures the statistical relationship between the gray levels of neighbouring vo
 
 
 
-\# 🧪 Pilot Analysis
+\## 🧪 Pilot Analysis
 
 
 
@@ -806,31 +806,31 @@ The pilot analysis established and checked:
 
 
 
-✅ MRI loading  
+✅ MRI loading
 
-✅ Tumour segmentation loading  
+✅ Tumour segmentation loading
 
-✅ Tumour mask generation  
+✅ Tumour mask generation
 
-✅ Non-zero percentile intensity normalization  
+✅ Non-zero percentile intensity normalization
 
-✅ Tumour-restricted intensity extraction  
+✅ Tumour-restricted intensity extraction
 
-✅ Tumour geometry calculations  
+✅ Tumour geometry calculations
 
-✅ Surface reconstruction  
+✅ Surface reconstruction
 
-✅ Sphericity calculation  
+✅ Sphericity calculation
 
-✅ PCA-based elongation  
+✅ PCA-based elongation
 
-✅ 3D intensity quantization  
+✅ 3D intensity quantization
 
-✅ Custom 3D GLCM construction  
+✅ Custom 3D GLCM construction
 
-✅ GLCM texture-feature extraction  
+✅ GLCM texture-feature extraction
 
-✅ Final 38-feature table  
+✅ Final 38-feature table
 
 
 
@@ -878,7 +878,7 @@ The pilot was used as the reference workflow before applying the pipeline to the
 
 
 
-\# 🚀 All-Subject Feature Extraction
+\## 🚀 All-Subject Feature Extraction
 
 
 
@@ -998,7 +998,7 @@ The pipeline did not automatically substitute the uncorrected segmentation in or
 
 
 
-\# 📁 Subject-Level Feature Files
+\## 📁 Subject-Level Feature Files
 
 
 
@@ -1050,7 +1050,7 @@ Each CSV contains:
 
 
 
-\# 📊 Master Radiomics Dataset
+\## 📊 Master Radiomics Dataset
 
 
 
@@ -1120,7 +1120,7 @@ This table serves as the main imaging-feature matrix for subsequent analysis.
 
 
 
-\# 🧾 Feature Schema
+\## 🧾 Feature Schema
 
 
 
@@ -1246,7 +1246,7 @@ T2\_glcm\_correlation
 
 
 
-\# 🔍 Quality Control
+\## 🔍 Quality Control
 
 
 
@@ -1352,7 +1352,7 @@ No detected violations were found in these checks.
 
 
 
-\# 📈 Feature Distribution
+\## 📈 Feature Distribution
 
 
 
@@ -1390,7 +1390,7 @@ This provides an initial overview of the variability of tumour morphology, MRI i
 
 
 
-\# 💾 Data and Reproducibility
+\## 💾 Data and Reproducibility
 
 
 
@@ -1410,7 +1410,7 @@ The current project workflow is designed so that the radiomics feature dataset c
 
 
 
-\# 🧭 Current Project Status
+\## 🧭 Current Project Status
 
 
 
@@ -1418,35 +1418,35 @@ The current project workflow is designed so that the radiomics feature dataset c
 
 
 
-✅ Project environment and repository setup  
+✅ Project environment and repository setup
 
-✅ MRI dataset organization  
+✅ MRI dataset organization
 
-✅ Pilot radiomics workflow  
+✅ Pilot radiomics workflow
 
-✅ Tumour geometry extraction  
+✅ Tumour geometry extraction
 
-✅ MRI intensity normalization  
+✅ MRI intensity normalization
 
-✅ Tumour intensity features  
+✅ Tumour intensity features
 
-✅ Custom 3D GLCM texture extraction  
+✅ Custom 3D GLCM texture extraction
 
-✅ 38-feature radiomics schema  
+✅ 38-feature radiomics schema
 
-✅ Automated processing pipeline  
+✅ Automated processing pipeline
 
-✅ 97/102 subjects processed  
+✅ 97/102 subjects processed
 
-✅ Subject-level feature generation  
+✅ Subject-level feature generation
 
-✅ Master radiomics table  
+✅ Master radiomics table
 
-✅ Failed-subject logging  
+✅ Failed-subject logging
 
-✅ Structural quality control  
+✅ Structural quality control
 
-✅ Numerical quality control  
+✅ Numerical quality control
 
 
 
@@ -1470,7 +1470,7 @@ with an additional `subject\_id` column in the master table.
 
 
 
-\# 🔮 Future Analysis
+\## 🔮 Future Analysis
 
 
 
@@ -1516,7 +1516,7 @@ These stages are separate from the feature-extraction workflow documented in thi
 
 
 
-\# 🧬 Scientific Direction
+\## 🧬 Scientific Direction
 
 
 
@@ -1560,7 +1560,7 @@ Together, these form a structured imaging representation that can subsequently b
 
 
 
-\# 🛠️ Technology Stack
+\## 🛠️ Technology Stack
 
 
 
@@ -1592,7 +1592,7 @@ Together, these form a structured imaging representation that can subsequently b
 
 
 
-\# 📚 References
+\## 📚 References
 
 
 
@@ -1655,4 +1655,6 @@ neuro-onco-omics/
 
 
 > The `data/` directory is intentionally excluded from GitHub. The MRI dataset and generated feature files remain local to the analysis environment.
+
+
 
