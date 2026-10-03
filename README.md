@@ -768,7 +768,7 @@ Together, these form a structured imaging representation that can subsequently b
 
 ## 📚 References
 
-* TCGA-GBM imaging dataset: [https://www.cancerimagingarchive.net/analysis-result/brats-tcga-gbm/](TCGA-GBM)
+* TCGA-GBM imaging dataset: [TCGA-GBM](https://www.cancerimagingarchive.net/analysis-result/brats-tcga-gbm/)
 * NiBabel documentation: [https://nipy.org/nibabel/](https://nipy.org/nibabel/)
 * scikit-image documentation: [https://scikit-image.org/](https://scikit-image.org/)
 * scikit-learn documentation: [https://scikit-learn.org/](https://scikit-learn.org/)
