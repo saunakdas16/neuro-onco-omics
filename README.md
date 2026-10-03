@@ -437,6 +437,48 @@ The pilot was used as the reference workflow before applying the pipeline to the
 
 > **Important:** The pilot serves as a method-development and validation stage for the feature-extraction workflow. It is not treated as an independent biological or machine-learning validation result.
 
+### 📁 Pilot Visualization Files
+
+The pilot visualizations generated during the analysis are saved locally in:
+
+`figures/pilot/`
+
+The saved figures include:
+
+- `all_modalities_segmentation_slice45.png` — FLAIR, T1, T1Gd and T2 with tumour segmentation overlay
+- `flair_tumour_segmentation_slice45.png` — FLAIR with tumour segmentation
+- `mri_modalities_slice45.png` — Four MRI modalities shown side-by-side
+- `mri_axial_middle_slice78.png` — MRI axial slice of the middle section
+
+These figures are retained as part of the pilot analysis and are also included in the GitHub repository for visualization and documentation.
+
+<table>
+<tr>
+<td align="center">
+<strong>MRI Axial Middle Slice</strong><br><br>
+<img src="figures/pilot/mri_axial_middle_slice78.png" width="380">
+</td>
+<td align="center">
+<strong>FLAIR + Tumour Segmentation</strong><br><br>
+<img src="figures/pilot/flair_tumour_segmentation_slice45.png" width="380">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<strong>MRI Modalities</strong><br><br>
+<img src="figures/pilot/mri_modalities_slice45.png" width="760">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<strong>All Modalities + Tumour Segmentation</strong><br><br>
+<img src="figures/pilot/all_modalities_segmentation_slice45.png" width="760">
+</td>
+</tr>
+</table>
+
 ---
 
 ## 🚀 All-Subject Feature Extraction
