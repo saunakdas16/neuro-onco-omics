@@ -215,10 +215,9 @@ Tumour sphericity describes how closely the tumour shape approaches a sphere.
 
 It is calculated from tumour volume and surface area:
 
-```text
-Sphericity =
-π^(1/3) × (6V)^(2/3) / A
-```
+$$
+\text{Sphericity} = \frac{\pi^{1/3}(6V)^{2/3}}{A}
+$$
 
 where:
 
@@ -232,9 +231,7 @@ Tumour shape anisotropy is estimated using Principal Component Analysis (PCA) on
 The feature is calculated from the ratio between the largest and second-largest principal spatial spreads:
 
 ```text
-Elongation =
-largest principal spread /
-second-largest principal spread
+Elongation = largest principal spread / second-largest principal spread
 ```
 
 ---
