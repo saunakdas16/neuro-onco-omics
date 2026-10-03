@@ -802,7 +802,7 @@ Together, these form a structured imaging representation that can subsequently b
 | **NumPy** | Numerical computation |
 | **Pandas** | Feature-table handling |
 | **scikit-image** | Marching cubes and image analysis |
-| **Scikit-learn** | PCA and future machine-learning analysis |
+| **Scikit-learn** | PCA and Machine-learning analysis |
 | **Matplotlib** | Visualization |
 | **Git / GitHub** | Version control and reproducibility |
 
@@ -826,7 +826,12 @@ neuro-onco-omics/
 │
 ├── data/                                               # Local MRI dataset & radiomics features (Git ignored)
 │
-├── figures/                                            # Project figures and visualizations
+├── figures/
+│   └── pilot/
+│       ├── all_modalities_segmentation_slice45.png
+│       ├── flair_tumour_segmentation_slice45.png
+│       ├── mri_axial_middle_slice78.png
+│       └── mri_modalities_slice45.png                  
 │
 ├── notebooks/
 │   ├── 01_pilot_analysis.ipynb                         # Pilot MRI radiomics workflow
