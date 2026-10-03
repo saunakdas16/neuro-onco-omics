@@ -18,13 +18,13 @@ A reproducible 3D MRI radiomics pipeline for quantitative analysis of brain tumo
 
 
 
-!\[Python](https://img.shields.io/badge/Python-3.x-blue?logo=python\\\&logoColor=white)
+!\[Python](https://img.shields.io/badge/Python-3.x-blue?logo=python\&logoColor=white)
 
-!\[NumPy](https://img.shields.io/badge/NumPy-2.x-013243?logo=numpy\\\&logoColor=white)
+!\[NumPy](https://img.shields.io/badge/NumPy-2.x-013243?logo=numpy\&logoColor=white)
 
-!\[Pandas](https://img.shields.io/badge/Pandas-2.x-150458?logo=pandas\\\&logoColor=white)
+!\[Pandas](https://img.shields.io/badge/Pandas-2.x-150458?logo=pandas\&logoColor=white)
 
-!\[Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-F7931E?logo=scikitlearn\\\&logoColor=white)
+!\[Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-F7931E?logo=scikitlearn\&logoColor=white)
 
 !\[NiBabel](https://img.shields.io/badge/NiBabel-NIfTI-orange)
 
@@ -64,13 +64,13 @@ The analysis focuses on four MRI modalities:
 
 
 
-\* FLAIR
+\- FLAIR
 
-\* T1
+\- T1
 
-\* T1Gd
+\- T1Gd
 
-\* T2
+\- T2
 
 
 
@@ -118,17 +118,17 @@ Each subject directory contains multi-modal MRI volumes together with tumour seg
 
 
 
-| Modality | Description                             |
+| Modality | Description |
 
-| -------- | --------------------------------------- |
+|---|---|
 
-| FLAIR    | Fluid-attenuated inversion recovery MRI |
+| FLAIR | Fluid-attenuated inversion recovery MRI |
 
-| T1       | T1-weighted MRI                         |
+| T1 | T1-weighted MRI |
 
-| T1Gd     | Contrast-enhanced T1-weighted MRI       |
+| T1Gd | Contrast-enhanced T1-weighted MRI |
 
-| T2       | T2-weighted MRI                         |
+| T2 | T2-weighted MRI |
 
 
 
@@ -176,15 +176,15 @@ For each subject, the pipeline identifies:
 
 
 
-\* FLAIR MRI
+\- FLAIR MRI
 
-\* T1 MRI
+\- T1 MRI
 
-\* T1Gd MRI
+\- T1Gd MRI
 
-\* T2 MRI
+\- T2 MRI
 
-\* Manually corrected tumour segmentation
+\- Manually corrected tumour segmentation
 
 
 
@@ -806,31 +806,31 @@ The pilot analysis established and checked:
 
 
 
-✅ MRI loading
+✅ MRI loading  
 
-✅ Tumour segmentation loading
+✅ Tumour segmentation loading  
 
-✅ Tumour mask generation
+✅ Tumour mask generation  
 
-✅ Non-zero percentile intensity normalization
+✅ Non-zero percentile intensity normalization  
 
-✅ Tumour-restricted intensity extraction
+✅ Tumour-restricted intensity extraction  
 
-✅ Tumour geometry calculations
+✅ Tumour geometry calculations  
 
-✅ Surface reconstruction
+✅ Surface reconstruction  
 
-✅ Sphericity calculation
+✅ Sphericity calculation  
 
-✅ PCA-based elongation
+✅ PCA-based elongation  
 
-✅ 3D intensity quantization
+✅ 3D intensity quantization  
 
-✅ Custom 3D GLCM construction
+✅ Custom 3D GLCM construction  
 
-✅ GLCM texture-feature extraction
+✅ GLCM texture-feature extraction  
 
-✅ Final 38-feature table
+✅ Final 38-feature table  
 
 
 
@@ -1418,35 +1418,35 @@ The current project workflow is designed so that the radiomics feature dataset c
 
 
 
-✅ Project environment and repository setup
+✅ Project environment and repository setup  
 
-✅ MRI dataset organization
+✅ MRI dataset organization  
 
-✅ Pilot radiomics workflow
+✅ Pilot radiomics workflow  
 
-✅ Tumour geometry extraction
+✅ Tumour geometry extraction  
 
-✅ MRI intensity normalization
+✅ MRI intensity normalization  
 
-✅ Tumour intensity features
+✅ Tumour intensity features  
 
-✅ Custom 3D GLCM texture extraction
+✅ Custom 3D GLCM texture extraction  
 
-✅ 38-feature radiomics schema
+✅ 38-feature radiomics schema  
 
-✅ Automated processing pipeline
+✅ Automated processing pipeline  
 
-✅ 97/102 subjects processed
+✅ 97/102 subjects processed  
 
-✅ Subject-level feature generation
+✅ Subject-level feature generation  
 
-✅ Master radiomics table
+✅ Master radiomics table  
 
-✅ Failed-subject logging
+✅ Failed-subject logging  
 
-✅ Structural quality control
+✅ Structural quality control  
 
-✅ Numerical quality control
+✅ Numerical quality control  
 
 
 
@@ -1655,6 +1655,4 @@ neuro-onco-omics/
 
 
 > The `data/` directory is intentionally excluded from GitHub. The MRI dataset and generated feature files remain local to the analysis environment.
-
-
 
