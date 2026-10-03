@@ -962,9 +962,9 @@ Five subjects were excluded because the required manually corrected tumour segme
 
 
 
-| Subject        | Reason                                      |
+| Subject | Reason |
 
-| -------------- | ------------------------------------------- |
+|---|---|
 
 | `TCGA-02-0070` | Manually corrected segmentation unavailable |
 
@@ -1564,27 +1564,27 @@ Together, these form a structured imaging representation that can subsequently b
 
 
 
-| Tool                 | Purpose                                  |
+| Tool | Purpose |
 
-| -------------------- | ---------------------------------------- |
+|---|---|
 
-| \*\*Python\*\*           | Core programming language                |
+| \*\*Python\*\* | Core programming language |
 
-| \*\*Jupyter Notebook\*\* | Interactive analysis                     |
+| \*\*Jupyter Notebook\*\* | Interactive analysis |
 
-| \*\*NiBabel\*\*          | NIfTI MRI loading                        |
+| \*\*NiBabel\*\* | NIfTI MRI loading |
 
-| \*\*NumPy\*\*            | Numerical computation                    |
+| \*\*NumPy\*\* | Numerical computation |
 
-| \*\*Pandas\*\*           | Feature-table handling                   |
+| \*\*Pandas\*\* | Feature-table handling |
 
-| \*\*scikit-image\*\*     | Marching cubes and image analysis        |
+| \*\*scikit-image\*\* | Marching cubes and image analysis |
 
-| \*\*Scikit-learn\*\*     | PCA and future machine-learning analysis |
+| \*\*Scikit-learn\*\* | PCA and future machine-learning analysis |
 
-| \*\*Matplotlib\*\*       | Visualization                            |
+| \*\*Matplotlib\*\* | Visualization |
 
-| \*\*Git / GitHub\*\*     | Version control and reproducibility      |
+| \*\*Git / GitHub\*\* | Version control and reproducibility |
 
 
 
