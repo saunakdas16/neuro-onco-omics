@@ -798,7 +798,7 @@ Together, these form a structured imaging representation that can subsequently b
 | **NiBabel** | NIfTI MRI loading |
 | **NumPy** | Numerical computation |
 | **Pandas** | Feature-table handling |
-| **scikit-image** | Marching cubes and image analysis |
+| **Scikit-image** | Marching cubes and image analysis |
 | **Scikit-learn** | PCA and Machine-learning analysis |
 | **Matplotlib** | Visualization |
 | **Git / GitHub** | Version control and reproducibility |
@@ -809,8 +809,8 @@ Together, these form a structured imaging representation that can subsequently b
 
 * TCGA-GBM imaging dataset: [TCGA-GBM](https://www.cancerimagingarchive.net/analysis-result/brats-tcga-gbm/)
 * NiBabel documentation: [https://nipy.org/nibabel/](https://nipy.org/nibabel/)
-* scikit-image documentation: [https://scikit-image.org/](https://scikit-image.org/)
-* scikit-learn documentation: [https://scikit-learn.org/](https://scikit-learn.org/)
+* Scikit-image documentation: [https://scikit-image.org/](https://scikit-image.org/)
+* Scikit-learn documentation: [https://scikit-learn.org/](https://scikit-learn.org/)
 * NumPy documentation: [https://numpy.org/](https://numpy.org/)
 * Pandas documentation: [https://pandas.pydata.org/](https://pandas.pydata.org/)
 
