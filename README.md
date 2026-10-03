@@ -204,7 +204,7 @@ TCGA-02-0009
 
 TCGA-02-0011
 
-````
+```
 
 
 
@@ -806,31 +806,31 @@ The pilot analysis established and checked:
 
 
 
-✅ MRI loading
+✅ MRI loading  
 
-✅ Tumour segmentation loading
+✅ Tumour segmentation loading  
 
-✅ Tumour mask generation
+✅ Tumour mask generation  
 
-✅ Non-zero percentile intensity normalization
+✅ Non-zero percentile intensity normalization  
 
-✅ Tumour-restricted intensity extraction
+✅ Tumour-restricted intensity extraction  
 
-✅ Tumour geometry calculations
+✅ Tumour geometry calculations  
 
-✅ Surface reconstruction
+✅ Surface reconstruction  
 
-✅ Sphericity calculation
+✅ Sphericity calculation  
 
-✅ PCA-based elongation
+✅ PCA-based elongation  
 
-✅ 3D intensity quantization
+✅ 3D intensity quantization  
 
-✅ Custom 3D GLCM construction
+✅ Custom 3D GLCM construction  
 
-✅ GLCM texture-feature extraction
+✅ GLCM texture-feature extraction  
 
-✅ Final 38-feature table
+✅ Final 38-feature table  
 
 
 
@@ -1418,35 +1418,35 @@ The current project workflow is designed so that the radiomics feature dataset c
 
 
 
-✅ Project environment and repository setup
+✅ Project environment and repository setup  
 
-✅ MRI dataset organization
+✅ MRI dataset organization  
 
-✅ Pilot radiomics workflow
+✅ Pilot radiomics workflow  
 
-✅ Tumour geometry extraction
+✅ Tumour geometry extraction  
 
-✅ MRI intensity normalization
+✅ MRI intensity normalization  
 
-✅ Tumour intensity features
+✅ Tumour intensity features  
 
-✅ Custom 3D GLCM texture extraction
+✅ Custom 3D GLCM texture extraction  
 
-✅ 38-feature radiomics schema
+✅ 38-feature radiomics schema  
 
-✅ Automated processing pipeline
+✅ Automated processing pipeline  
 
-✅ 97/102 subjects processed
+✅ 97/102 subjects processed  
 
-✅ Subject-level feature generation
+✅ Subject-level feature generation  
 
-✅ Master radiomics table
+✅ Master radiomics table  
 
-✅ Failed-subject logging
+✅ Failed-subject logging  
 
-✅ Structural quality control
+✅ Structural quality control  
 
-✅ Numerical quality control
+✅ Numerical quality control  
 
 
 
@@ -1610,8 +1610,6 @@ Together, these form a structured imaging representation that can subsequently b
 
 
 
-
-
 \---
 
 
@@ -1651,13 +1649,10 @@ neuro-onco-omics/
 │
 
 └── README.md
+
 ```
 
 
 
 > The `data/` directory is intentionally excluded from GitHub. The MRI dataset and generated feature files remain local to the analysis environment.
-
-
-
-```
 
